@@ -1,0 +1,2 @@
+call uk1r_common_fnc_init;
+call uk1r_spawner_fnc_init;

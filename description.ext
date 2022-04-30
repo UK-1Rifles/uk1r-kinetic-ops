@@ -1,0 +1,4 @@
+class Extended_PreInit_EventHandlers {
+  uk1r_common_init = "call compile preprocessFileLineNumbers 'uk1r\functions\common\XEH_preInit.sqf'";
+  uk1r_spawner_init = "call compile preprocessFileLineNumbers 'uk1r\functions\spawner\XEH_preInit.sqf'";
+};
