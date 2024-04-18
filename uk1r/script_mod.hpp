@@ -1,2 +1,2 @@
-#define PREFIX UK1R
+#define PREFIX uk1r
 #include "..\script_mission.hpp"

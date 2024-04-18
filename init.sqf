@@ -1,2 +1,7 @@
-call uk1r_common_fnc_init;
-call uk1r_spawner_fnc_init;
+if (hasInterface) then {
+	// Fix for remoteExec config blocking initPlayerServer.
+	0 spawn {
+		waitUntil {!isNull player};
+		[player, didJIP] remoteExec ["fixes_fnc_initPlayerServer", 2];
+	};
+};

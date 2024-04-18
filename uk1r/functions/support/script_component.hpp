@@ -1,3 +1,3 @@
-#define COMPONENT common
+#define COMPONENT support
 
 #include "..\..\script_mod.hpp"

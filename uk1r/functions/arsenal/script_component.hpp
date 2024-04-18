@@ -1,3 +1,3 @@
-#define COMPONENT common
+#define COMPONENT arsenal
 
 #include "..\..\script_mod.hpp"

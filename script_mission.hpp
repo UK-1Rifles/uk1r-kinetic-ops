@@ -9,3 +9,5 @@
     #undef PREP
     #define PREP(fncName) [QUOTE(PATHTO_SYS('','',DOUBLES(fnc,fncName))), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
+
+#define PRINT(x) diag_log x
