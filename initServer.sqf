@@ -1,8 +1,8 @@
 // Mission component initialisation.
-call uk1r_common_fnc_init;
-call uk1r_caching_fnc_init;
-call uk1r_civilians_fnc_init;
-call uk1r_spawner_fnc_init;
-call uk1r_support_fnc_init;
-call uk1r_tasks_fnc_init;
-call uk1r_arsenal_fnc_init;
+call kops_common_fnc_init;
+call kops_caching_fnc_init;
+call kops_civilians_fnc_init;
+call kops_spawner_fnc_init;
+call kops_support_fnc_init;
+call kops_tasks_fnc_init;
+call kops_arsenal_fnc_init;

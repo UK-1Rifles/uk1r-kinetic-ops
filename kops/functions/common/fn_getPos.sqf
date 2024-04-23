@@ -6,4 +6,4 @@ params [
 
 private _position = [];
 
-switch (typeOf _target) 
+switch (typeOf _target)

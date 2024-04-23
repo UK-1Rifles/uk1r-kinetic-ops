@@ -5,7 +5,7 @@ class CfgFunctions {
       class initPlayerServer { file="initPlayerServer.sqf"; };
     };
   };
-  #include "uk1r\functions\CfgFunctions.hpp"
+  #include "kops\functions\CfgFunctions.hpp"
 };
 
 class CfgRemoteExec {
@@ -43,37 +43,37 @@ cba_settings_whitelist[] = {"admin"};
 
 class Extended_PreInit_EventHandlers {
   // Component settings.
-  uk1r_arsenal_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\arsenal\settings.sqf'";
-  uk1r_caching_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\caching\settings.sqf'";
-  uk1r_civilians_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\civilians\settings.sqf'";
-  uk1r_spawner_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\spawner\settings.sqf'";
-  uk1r_squad_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\squad\settings.sqf'";
-  uk1r_support_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\support\settings.sqf'";
-  uk1r_tasks_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\tasks\settings.sqf'";
+  kops_arsenal_settings = "call compile preprocessFileLineNumbers 'kops\functions\arsenal\settings.sqf'";
+  kops_caching_settings = "call compile preprocessFileLineNumbers 'kops\functions\caching\settings.sqf'";
+  kops_civilians_settings = "call compile preprocessFileLineNumbers 'kops\functions\civilians\settings.sqf'";
+  kops_spawner_settings = "call compile preprocessFileLineNumbers 'kops\functions\spawner\settings.sqf'";
+  kops_squad_settings = "call compile preprocessFileLineNumbers 'kops\functions\squad\settings.sqf'";
+  kops_support_settings = "call compile preprocessFileLineNumbers 'kops\functions\support\settings.sqf'";
+  kops_tasks_settings = "call compile preprocessFileLineNumbers 'kops\functions\tasks\settings.sqf'";
 };
 
 /* Framework stuff */
 class CfgArsenal {
   // Base config, for inheretence only.
-  #include "uk1r\data\arsenal\base.hpp"
+  #include "kops\data\arsenal\base.hpp"
   // Blufor arsenals.
-  #include "uk1r\data\arsenal\blufor.hpp"
+  #include "kops\data\arsenal\blufor.hpp"
   // Opfor arsenals.
-  #include "uk1r\data\arsenal\opfor.hpp"
+  #include "kops\data\arsenal\opfor.hpp"
   // Independant arsenals.
-  #include "uk1r\data\arsenal\grefor.hpp"
+  #include "kops\data\arsenal\grefor.hpp"
 };
 
 class CfgFactions {
   // Base config, for inheretence only.
-  #include "uk1r\data\factions\base.hpp"
+  #include "kops\data\factions\base.hpp"
   // Blufor factions.
-  #include "uk1r\data\factions\blu_nato_vanilla.hpp"
+  #include "kops\data\factions\blu_nato_vanilla.hpp"
   // Opfor factions.
-  #include "uk1r\data\factions\opf_insurgents_vanilla.hpp"
+  #include "kops\data\factions\opf_insurgents_vanilla.hpp"
   // Indep factions.
-  #include "uk1r\data\factions\gre_insurgents_vanilla.hpp"
+  #include "kops\data\factions\gre_insurgents_vanilla.hpp"
   // Civilian factions.
-  #include "uk1r\data\factions\civ_mediterranean.hpp"
-  #include "uk1r\data\factions\civ_middle_east.hpp"
+  #include "kops\data\factions\civ_mediterranean.hpp"
+  #include "kops\data\factions\civ_middle_east.hpp"
 };
