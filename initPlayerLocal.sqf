@@ -9,14 +9,14 @@ params ["_player", "_didJIP"];
 };
 
 // Mission component initialisation.
-call kops_common_fnc_init;
-call kops_arsenal_fnc_init;
-call kops_support_fnc_init;
-call kops_tasks_fnc_init;
+call uk1r_common_fnc_init;
+call uk1r_arsenal_fnc_init;
+call uk1r_support_fnc_init;
+call uk1r_tasks_fnc_init;
 
 {
-  [_x] call kops_arsenal_fnc_add;
+  [_x] call uk1r_arsenal_fnc_add;
 } forEach [
-	kops_arsenal_blufor_1,
-	kops_arsenal_blufor_2
+	uk1r_arsenal_blufor_1,
+	uk1r_arsenal_blufor_2
 ];
