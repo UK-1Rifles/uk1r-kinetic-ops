@@ -1,9 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/linux,windows,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,windows,visualstudiocode
 
-## Arma 3 ##
-mission.sqm
-
 ### Linux ###
 *~
 
@@ -65,3 +62,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,visualstudiocode
+
+## Arma 3 ##
+*.sqm
