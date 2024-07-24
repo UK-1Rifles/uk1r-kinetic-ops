@@ -4,6 +4,8 @@ class DOUBLES(PREFIX,COMPONENT) {
     file = QUOTE(PREFIX\functions\COMPONENT);
     class createGroup {};
     class createUnit {};
+    class createVehicle {};
     class init {};
+    class setUnitSkill {};
   };
 };

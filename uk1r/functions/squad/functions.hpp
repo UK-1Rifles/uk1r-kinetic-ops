@@ -5,5 +5,8 @@ class DOUBLES(PREFIX,COMPONENT) {
     class getRole {};
     class init {};
     class setRole {};
+    class turretChangedEH {};
+    class vehicleChangedEH {};
+    class weaponChangedEH {};
   };
 };

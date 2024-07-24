@@ -1,5 +1,5 @@
 class base {
-  addons[] = {};
+  requiredAddons[] = {};
   displayName = "BASE";
   scope = 0;
   class base {

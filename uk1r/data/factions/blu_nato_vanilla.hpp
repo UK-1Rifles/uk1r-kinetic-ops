@@ -39,4 +39,5 @@ class TRIPLES(PREFIX,f,FACTION) : base {
 
     };
   };
+  class skill : skill {};
 };

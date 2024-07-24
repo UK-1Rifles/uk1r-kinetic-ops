@@ -1,12 +1,16 @@
 #include "script_component.hpp"
 params [
-  ["_target", objNull, [objNull]]
+  ["_unit", objNull, [objNull]]
 ];
 
 // Check for null parameters.
-if (isNull _target) exitWith {false};
+if (isNull _unit) exitWith {false};
 
 // Get the role.
-private _return = (_target getVariable [QGVAR(role), ""]);
+private _role = (
+  switch true do {
+    default {_unit getVariable [QGVAR(role), "rifleman"]};
+  }
+);
 
-_return
+_role

@@ -1,5 +1,4 @@
 #include "script_mission.hpp"
-
 params ["_player", "_didJIP"];
 
 // Fix for remote execution config blocking initPlayerServer.
@@ -9,11 +8,9 @@ params ["_player", "_didJIP"];
 };
 
 // Mission component initialisation.
-call uk1r_common_fnc_init;
-call uk1r_arsenal_fnc_init;
-call uk1r_support_fnc_init;
-call uk1r_tasks_fnc_init;
+call uk1r_main_fnc_init;
 
+// Add arsenals.
 {
   [_x] call uk1r_arsenal_fnc_add;
 } forEach [

@@ -2,7 +2,6 @@
 #define FACTION blufor
 
 class DOUBLES(PREFIX,FACTION) : base {
-  addons[] = {};
   displayName = "BLUFOR (Vanilla)";
   scope = 2;
   class TRIPLES(PREFIX,FACTION,base) : base {

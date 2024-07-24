@@ -46,10 +46,14 @@ class Extended_PreInit_EventHandlers {
   uk1r_arsenal_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\arsenal\settings.sqf'";
   uk1r_caching_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\caching\settings.sqf'";
   uk1r_civilians_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\civilians\settings.sqf'";
+  uk1r_garage_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\garage\settings.sqf'";
+  uk1r_intel_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\intel\settings.sqf'";
+  uk1r_persistence_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\persistence\settings.sqf'";
   uk1r_spawner_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\spawner\settings.sqf'";
   uk1r_squad_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\squad\settings.sqf'";
+  uk1r_stats_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\stats\settings.sqf'";
   uk1r_support_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\support\settings.sqf'";
-  uk1r_tasks_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\tasks\settings.sqf'";
+  uk1r_terrain_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\terrain\settings.sqf'";
 };
 
 /* Framework stuff */
