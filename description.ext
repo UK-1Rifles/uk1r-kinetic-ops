@@ -49,6 +49,7 @@ class Extended_PreInit_EventHandlers {
   uk1r_garage_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\garage\settings.sqf'";
   uk1r_intel_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\intel\settings.sqf'";
   uk1r_persistence_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\persistence\settings.sqf'";
+  uk1r_respawn_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\respawn\settings.sqf'";
   uk1r_spawner_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\spawner\settings.sqf'";
   uk1r_squad_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\squad\settings.sqf'";
   uk1r_stats_settings = "call compile preprocessFileLineNumbers 'uk1r\functions\stats\settings.sqf'";
@@ -69,15 +70,24 @@ class CfgArsenal {
 };
 
 class CfgFactions {
-  // Base config, for inheretence only.
+  // Base config, for inheritence only.
   #include "uk1r\data\factions\base.hpp"
   // Blufor factions.
   #include "uk1r\data\factions\blu_nato_vanilla.hpp"
+  #include "uk1r\data\factions\blu_insurgents.hpp"
   // Opfor factions.
-  #include "uk1r\data\factions\opf_insurgents_vanilla.hpp"
+  #include "uk1r\data\factions\opfor.hpp"
+  #include "uk1r\data\factions\opf_insurgents.hpp"
   // Indep factions.
-  #include "uk1r\data\factions\gre_insurgents_vanilla.hpp"
+  #include "uk1r\data\factions\grefor.hpp"
+  #include "uk1r\data\factions\gre_insurgents.hpp"
   // Civilian factions.
   #include "uk1r\data\factions\civ_mediterranean.hpp"
   #include "uk1r\data\factions\civ_middle_east.hpp"
 };
+
+class RscTitles {
+  #include "uk1r\data\ui\dialogues.hpp"
+};
+
+#include "uk1r\data\ui\displays.hpp"
