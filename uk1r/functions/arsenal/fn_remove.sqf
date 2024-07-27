@@ -1,4 +1,7 @@
 #include "script_component.hpp"
+
+if !(isServer) exitWith {false};
+
 params [
   ["_arsenal", objNull, [objNull]]
 ];
@@ -11,5 +14,6 @@ if !([_arsenal] call FUNC(empty)) exitWith {false};
 
 // Unregister the arsenal.
 GVAR(active) = GVAR(active) - [_arsenal];
+publicVariable QGVAR(active);
 
 true

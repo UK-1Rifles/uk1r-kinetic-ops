@@ -13,7 +13,7 @@ private _category = format [
 		format ["Enables or disables the %1 system", QUOTE(COMPONENT)]
 	],
 	_category,
-	True,
-	True
+	true,
+	true
 ] call cba_fnc_addSetting;
 */

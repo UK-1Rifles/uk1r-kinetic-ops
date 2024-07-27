@@ -12,8 +12,8 @@ private _category = format [
 		format ["Enables or disables the %1 system", QUOTE(COMPONENT)]
 	],
 	_category,
-	True, // Type specific options (https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#setting-type-specific-arguments-_valueinfo).
-	True, // Is global.
+	true, // Type specific options (https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#setting-type-specific-arguments-_valueinfo).
+	true, // Is global.
 	{},
-	True // Requires restart.
+	true // Requires restart.
 ] call cba_fnc_addSetting;

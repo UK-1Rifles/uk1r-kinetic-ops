@@ -10,8 +10,14 @@ params [
 // Check for null parameters.
 if (isNull _arsenal) exitWith {false};
 
+// Check the arsenal side.
+private _side = _arsenal getVariable [QGVAR(side), playerSide];
+
+// Check if side restrictions apply.
+if (GVAR(restrict) && _side != playerSide) exitWith {false};
+
 // Select the appropriate arsenal config for the player side.
-private _config = (switch playerSide do {
+private _config = (switch _side do {
   case BLUFOR : {GVAR(blufor)};
   case OPFOR : {GVAR(opfor)};
   case Independent : {GVAR(grefor)};
@@ -32,6 +38,7 @@ private _items = [];
 
 // Populate the item lists.
 {
+  // If the current config sub-class conditions are met, add the items to the list.
   if (call compile getText (_x >> "condition")) then {
     _weapons = _weapons + getArray (_x >> "weaponsPrimary");
     _weapons = _weapons + getArray (_x >> "weaponsLauncher");

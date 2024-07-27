@@ -14,10 +14,23 @@ private _names = _values apply { getText (_x >> "displayName"); };
 		format ["Enables or disables the %1 system", QUOTE(COMPONENT)]
 	],
 	_category,
-	True, // Type specific options (https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#setting-type-specific-arguments-_valueinfo).
-	True, // Is global.
+	true, // Type specific options (https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#setting-type-specific-arguments-_valueinfo).
+	true, // Is global.
 	{},
-	True // Requires restart.
+	true // Requires restart.
+] call cba_fnc_addSetting;
+[
+	QGVAR(restrict),
+	"CHECKBOX",
+	[
+		"Restrict sides",
+		"Restrict players to arsenals of the same side only."
+	],
+	_category,
+	true,
+	true,
+	{},
+	true
 ] call cba_fnc_addSetting;
 [
 	QGVAR(blufor),
@@ -32,9 +45,9 @@ private _names = _values apply { getText (_x >> "displayName"); };
 		_names,
 		0
 	],
-	True,
-	{},
-	True
+	true,
+	{[] remoteExec [QFUNC(updateAll), WEST]},
+	false
 ] call cba_fnc_addSetting;
 [
 	QGVAR(opfor),
@@ -49,9 +62,9 @@ private _names = _values apply { getText (_x >> "displayName"); };
 		_names,
 		0
 	],
-	True,
-	{},
-	True
+	true,
+	{[] remoteExec [QFUNC(updateAll), EAST]},
+	false
 ] call cba_fnc_addSetting;
 [
 	QGVAR(grefor),
@@ -66,7 +79,7 @@ private _names = _values apply { getText (_x >> "displayName"); };
 		_names,
 		0
 	],
-	True,
-	{},
-	True
+	true,
+	{[] remoteExec [QFUNC(updateAll), INDEPENDENT]},
+	false
 ] call cba_fnc_addSetting;
