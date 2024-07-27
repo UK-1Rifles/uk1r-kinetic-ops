@@ -20,53 +20,41 @@ private _names = _values apply { getText (_x >> "displayName"); };
 	True // Requires restart.
 ] call cba_fnc_addSetting;
 [
-	QGVAR(blufor),
-	"LIST",
+	QGVAR(restrictWeapons),
+	"CHECKBOX",
 	[
-		"BLUFOR faction",
-		"Faction to use for the blufor side."
+		"Restrict weapons",
+		"Restrict use of weapon classes to their respective role."
 	],
 	_category,
-	[
-		_values,
-		_names,
-		0
-	],
+	True,
 	True,
 	{},
-	True
+	False
+]
+[
+	QGVAR(restrictCrewman),
+	"CHECKBOX",
+	[
+		"Restrict crewman",
+		"Restrict land vehicle crew roles to crewman (driver, gunner and commander)."
+	],
+	_category,
+	True,
+	True,
+	{},
+	False
 ] call cba_fnc_addSetting;
 [
-	QGVAR(opfor),
-	"LIST",
+	QGVAR(restrictAircrew),
+	"CHECKBOX",
 	[
-		"OPFOR faction",
-		"Faction to use for the opfor side."
+		"Restrict aircrew",
+		"Restrict air vehicle crew roles to aircrew (pilot, gunner and commander)."
 	],
 	_category,
-	[
-		_values,
-		_names,
-		0
-	],
+	True,
 	True,
 	{},
-	True
-] call cba_fnc_addSetting;
-[
-	QGVAR(grefor),
-	"LIST",
-	[
-		"GREFOR faction",
-		"Faction to use for the grefor side."
-	],
-	_category,
-	[
-		_values,
-		_names,
-		0
-	],
-	True,
-	{},
-	True
+	False
 ] call cba_fnc_addSetting;
