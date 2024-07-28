@@ -11,30 +11,30 @@ if (hasInterface) then {
 
   player addEventHandler [
     "GetInMan",
-    FUNC(isQualifiedVehicle)
+    FUNC(getInManEH)
   ];
 
   player addEventHandler [
     "SeatSwitchedMan",
-    FUNC(isQualifiedVehicle)
+    FUNC(seatSwitchedManEH)
   ];
 
   [
     "Tank_F",
     "Engine",
-    FUNC(engineOnEH)
+    FUNC(engineEH)
   ] call cba_fnc_addClassEventHandler;
 
   [
     "Wheeled_APC_F",
     "Engine",
-    FUNC(engineOnEH)
+    FUNC(engineEH)
   ] call cba_fnc_addClassEventHandler;
 
   [
     "Air",
     "Engine",
-    FUNC(engineOnEH)
+    FUNC(engineEH)
   ] call cba_fnc_addClassEventHandler;
 
 };

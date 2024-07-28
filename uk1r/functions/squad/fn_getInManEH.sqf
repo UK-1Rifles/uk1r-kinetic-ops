@@ -25,11 +25,11 @@ if (GVAR(restrictGroundCrew) && {!([_unit] call FUNC(getRole) == "groundcrew")})
       if (_crewUnit == _unit) then {
 
         // Disqualify driver and commander positions.
-        if (_role in ["driver", "commander"] || {(_role isEqualTo "gunner" && _turretPath isEqualTo [0])}) then {
+        if (_role in ["driver", "commander", "gunner"]) then {
           _qualified = false;
           _message = "You must take a groundcrew role to operate that vehicle position.";
         } else {
-          if (GVAR(restrictTurrets) && {_role isEqualTo "gunner" && {_turretPath isNotEqualTo []}}) then {
+          if (GVAR(restrictTurrets) && {_role isEqualTo "turret" && !_personTurret}) then {
             _qualified = false;
             _message = "You must take a groundcrew role to operate that vehicle position.";
           };
@@ -55,11 +55,11 @@ if (GVAR(restrictAirCrew) && {!([_unit] call FUNC(getRole) == "aircrew")}) then 
       if (_crewUnit == _unit) then {
 
         // Disqualify driver and commander positions.
-        if (_role in ["driver", "commander"] || {(_role isEqualTo "gunner" && _turretPath isEqualTo [0])}) then {
+        if (_role in ["driver", "commander", "gunner"]) then {
           _qualified = false;
           _message = "You must take a aircrew role to operate that vehicle position.";
         } else {
-          if (GVAR(restrictTurrets) && {_role isEqualTo "gunner" && {_turretPath isNotEqualTo []}}) then {
+          if (GVAR(restrictTurrets) && {_role isEqualTo "turret" && !_personTurret}) then {
             _qualified = false;
             _message = "You must take a aircrew role to operate that vehicle position.";
           };
