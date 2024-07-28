@@ -1,5 +1,4 @@
-#include "..\..\..\script_mission.hpp"
-#include "..\base.hpp"
+#include "..\..\..\script_mod.hpp"
 #include "\a3\3DEN\UI\macros.inc"
 #include "\a3\3DEN\UI\macroexecs.inc"
 

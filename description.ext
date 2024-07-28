@@ -99,9 +99,12 @@ class CfgFactions {
   #include "uk1r\data\factions\civ_middle_east.hpp"
 };
 
-class RscTitles {};
 
+// Dialogues and displays.
+#include "uk1r\data\ui\base.hpp"
 #include "uk1r\data\ui\displays\RscGarage.hpp"
 #include "uk1r\data\ui\displays\RscPhoneBase.hpp"
 #include "uk1r\data\ui\displays\RscTabletBase.hpp"
 #include "uk1r\data\ui\displays\RscTadsBase.hpp"
+
+class RscTitles {};

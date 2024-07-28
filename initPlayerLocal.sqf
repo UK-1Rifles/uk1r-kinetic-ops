@@ -9,11 +9,3 @@ params ["_player", "_didJIP"];
 
 // Mission component initialisation.
 call uk1r_main_fnc_init;
-
-// Add arsenals.
-{
-  [_x] call uk1r_arsenal_fnc_add;
-} forEach [
-	uk1r_arsenal_blufor_1,
-	uk1r_arsenal_blufor_2
-];

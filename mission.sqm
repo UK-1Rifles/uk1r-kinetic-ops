@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14156.625,55.571495,16262.666};
-		dir[]={0.44814301,-0.67164791,0.59017169};
-		up[]={0.40619892,0.7408098,0.53493041};
-		aside[]={0.7964955,4.0745363e-06,-0.60482854};
+		pos[]={14154.231,45.328735,16246.412};
+		dir[]={0.44004843,-0.56411958,0.69867891};
+		up[]={0.30064186,0.82569087,0.47733948};
+		aside[]={0.84616864,1.8521678e-07,-0.53294396};
 	};
 };
 binarizationWanted=0;
@@ -154,7 +154,8 @@ dlcs[]=
 randomSeed=7975073;
 class ScenarioData
 {
-	author="Luke";
+	author="UK1R";
+	saving=0;
 	wreckRemovalMaxTime=3600;
 };
 class CustomAttributes
@@ -189,7 +190,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
 										class data
@@ -206,6 +207,22 @@ class CustomAttributes
 											value="ins_grids_checkinterval";
 										};
 									};
+									class Item2
+									{
+										class data
+										{
+											singleType="STRING";
+											value="uk1r_arsenal_opfor";
+										};
+									};
+									class Item3
+									{
+										class data
+										{
+											singleType="STRING";
+											value="uk1r_arsenal_grefor";
+										};
+									};
 								};
 							};
 						};
@@ -216,7 +233,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
 										class data
@@ -271,6 +288,60 @@ class CustomAttributes
 											};
 										};
 									};
+									class Item2
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="CONFIG";
+														root=-1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item3
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="CONFIG";
+														root=-1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
 								};
 							};
 						};
@@ -293,6 +364,7 @@ class Mission
 {
 	class Intel
 	{
+		briefingName="CHANGE ME";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
@@ -324,8 +396,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14162.621,19.581438,16267.529};
-						angles[]={0,0.91450167,0};
+						position[]={14154.467,19.514931,16283.137};
+						angles[]={0,0.91450018,0};
 					};
 					side="West";
 					flags=7;
@@ -501,6 +573,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this, WEST] call uk1r_arsenal_fnc_add;";
 				name="uk1r_arsenal_blufor_1";
 				disableSimulation=1;
 			};
@@ -543,12 +616,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14178.229,20.41082,16263.361};
-				angles[]={0.0012918708,3.6902544,0};
+				angles[]={0.0012915437,3.6902544,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="[this, WEST] call uk1r_arsenal_fnc_add;";
 				name="uk1r_arsenal_blufor_2";
 				disableSimulation=1;
 			};

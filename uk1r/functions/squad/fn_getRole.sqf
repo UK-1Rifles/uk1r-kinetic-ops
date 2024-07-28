@@ -12,7 +12,7 @@ private _role = (
     // TODO: Find ways to define other roles.
     // Default: The role variable, otherwise "rifleman".
     default {_unit getVariable [QGVAR(role), "rifleman"]};
-  };
+  }
 );
 
 _role

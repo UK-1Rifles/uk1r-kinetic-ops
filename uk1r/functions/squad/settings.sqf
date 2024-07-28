@@ -29,7 +29,7 @@ private _category = format [
 	true,
 	{},
 	false
-]
+] call cba_fnc_addSetting;
 [
 	QGVAR(restrictCrewman),
 	"CHECKBOX",

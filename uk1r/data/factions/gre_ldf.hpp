@@ -1,5 +1,5 @@
 #include "..\..\script_mod.hpp"
-#define FACTION gre_aaf
+#define FACTION gre_ldf
 
 class DOUBLES(PREFIX,FACTION) {
 	addons[] = {};

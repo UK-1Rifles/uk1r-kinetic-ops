@@ -11,7 +11,7 @@ if (_weapon == "") exitWith {true};
 private _qualified = true;
 
 // Set the default message to show to players. Can be overwritten if needed.
-private _message = "You are not qualified to use that weapon."
+private _message = "You are not qualified to use that weapon.";
 
 // Get the unit role.
 private _role = [_unit] call FUNC(getRole);
