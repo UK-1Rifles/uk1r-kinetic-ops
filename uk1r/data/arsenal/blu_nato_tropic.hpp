@@ -1,8 +1,9 @@
 #include "..\..\script_mod.hpp"
-#define FACTION blufor
+#define FACTION blu_nato_tr
 
 class DOUBLES(PREFIX,FACTION) : base {
-  displayName = "BLUFOR (Vanilla)";
+  addons[] = {};
+  displayName = "Vanilla NATO (tropic)";
   scope = 2;
   class TRIPLES(PREFIX,FACTION,base) : base {
     attachments[] = {

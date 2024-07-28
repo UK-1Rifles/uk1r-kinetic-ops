@@ -1,4 +1,7 @@
-class base {
+#include "..\..\script_mod.hpp"
+#define FACTION base
+
+class DOUBLES(PREFIX,FACTION) {
 	addons[] = {};
 	scope = 1; // Set this to 2 for factions you want to be visible.
 	side = 8; // 0 = Opfor, 1 = Blufor, 2 = Indep, 3 = Civilian. 

@@ -62,32 +62,46 @@ class CfgArsenal {
   // Base config, for inheretence only.
   #include "uk1r\data\arsenal\base.hpp"
   // Blufor arsenals.
-  #include "uk1r\data\arsenal\blufor.hpp"
+  #include "uk1r\data\arsenal\blu_nato_temperate.hpp"
+  #include "uk1r\data\arsenal\blu_nato_tropic.hpp"
+  #include "uk1r\data\arsenal\blu_nato_arid.hpp"
   // Opfor arsenals.
-  #include "uk1r\data\arsenal\opfor.hpp"
+  #include "uk1r\data\arsenal\opf_csat_temperate.hpp"
+  #include "uk1r\data\arsenal\opf_csat_tropic.hpp"
+  #include "uk1r\data\arsenal\opf_csat_arid.hpp"  
   // Independant arsenals.
-  #include "uk1r\data\arsenal\grefor.hpp"
+  #include "uk1r\data\arsenal\gre_aaf.hpp"
+  #include "uk1r\data\arsenal\gre_ldf.hpp"
 };
 
 class CfgFactions {
   // Base config, for inheritence only.
   #include "uk1r\data\factions\base.hpp"
   // Blufor factions.
-  #include "uk1r\data\factions\blu_nato_vanilla.hpp"
+  #include "uk1r\data\factions\blu_nato_temperate.hpp"
+  #include "uk1r\data\factions\blu_nato_tropic.hpp"
+  #include "uk1r\data\factions\blu_nato_arid.hpp"
+  #include "uk1r\data\factions\blu_guerilla.hpp"
   #include "uk1r\data\factions\blu_insurgents.hpp"
   // Opfor factions.
-  #include "uk1r\data\factions\opfor.hpp"
+  #include "uk1r\data\factions\opf_csat_temperate.hpp"
+  #include "uk1r\data\factions\opf_csat_tropic.hpp"
+  #include "uk1r\data\factions\opf_csat_arid.hpp"
+  #include "uk1r\data\factions\opf_guerilla.hpp"
   #include "uk1r\data\factions\opf_insurgents.hpp"
   // Indep factions.
-  #include "uk1r\data\factions\grefor.hpp"
+  #include "uk1r\data\factions\gre_aaf.hpp"
+  #include "uk1r\data\factions\gre_ldf.hpp"
+  #include "uk1r\data\factions\gre_guerilla.hpp"
   #include "uk1r\data\factions\gre_insurgents.hpp"
   // Civilian factions.
   #include "uk1r\data\factions\civ_mediterranean.hpp"
   #include "uk1r\data\factions\civ_middle_east.hpp"
 };
 
-class RscTitles {
-  #include "uk1r\data\ui\dialogues.hpp"
-};
+class RscTitles {};
 
-#include "uk1r\data\ui\displays.hpp"
+#include "uk1r\data\ui\displays\RscGarage.hpp"
+#include "uk1r\data\ui\displays\RscPhoneBase.hpp"
+#include "uk1r\data\ui\displays\RscTabletBase.hpp"
+#include "uk1r\data\ui\displays\RscTadsBase.hpp"
