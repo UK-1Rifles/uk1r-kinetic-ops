@@ -9,15 +9,26 @@ if (hasInterface) then {
     FUNC(weaponChangedEH)
   ] call cba_fnc_addPlayerEventHandler;
 
-  [
-    "vehicle",
-    FUNC(vehicleChangedEH)
-  ] call cba_fnc_addPlayerEventHandler;
+  //[
+  //  "vehicle",
+  //  FUNC(vehicleChangedEH)
+  //] call cba_fnc_addPlayerEventHandler;
 
-  [
-    "turret",
-    FUNC(turretChangedEH)
-  ] call cba_fnc_addPlayerEventHandler;
+  //[
+  //  "turret",
+  //  FUNC(turretChangedEH)
+  //] call cba_fnc_addPlayerEventHandler;
+
+  player addEventHandler [
+    "GetInMan",
+    FUNC(isQualifiedVehicle)
+  ];
+
+  player addEventHandler [
+    "SeatSwitchedMan",
+    FUNC(isQualifiedVehicle)
+  ];
+
 };
 
 GVAR(init) = true;

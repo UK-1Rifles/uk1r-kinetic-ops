@@ -31,11 +31,11 @@ private _category = format [
 	false
 ] call cba_fnc_addSetting;
 [
-	QGVAR(restrictCrewman),
+	QGVAR(restrictGroundcrew),
 	"CHECKBOX",
 	[
-		"Restrict crewman",
-		"Restrict land vehicle crew roles to crewman (driver, gunner and commander)."
+		"Restrict groundcrew",
+		"Restrict land vehicle crew roles to groundcrew (driver, gunner and commander)."
 	],
 	_category,
 	true,
@@ -48,7 +48,61 @@ private _category = format [
 	"CHECKBOX",
 	[
 		"Restrict aircrew",
-		"Restrict air vehicle crew roles to aircrew (pilot, gunner and commander)."
+		"Restrict air vehicle crew roles to aircrew (pilot and gunner)."
+	],
+	_category,
+	true,
+	true,
+	{},
+	false
+] call cba_fnc_addSetting;
+[
+	QGVAR(restrictTurrets),
+	"CHECKBOX",
+	[
+		"Restrict turrets",
+		"Restrict non-gunner turret positions to crew only."
+	],
+	_category,
+	false,
+	true,
+	{},
+	false
+] call cba_fnc_addSetting;
+/*
+[
+	QGVAR(restrictCargoTurrets),
+	"CHECKBOX",
+	[
+		"Restrict cargo turrets",
+		"Restrict person turret positions to crew only."
+	],
+	_category,
+	false,
+	true,
+	{},
+	false
+] call cba_fnc_addSetting;
+*/
+[
+	QGVAR(requireGunner),
+	"CHECKBOX",
+	[
+		"Require commander",
+		"Determines if a crewed ground vehicle requires the commander to operate."
+	],
+	_category,
+	true,
+	true,
+	{},
+	false
+] call cba_fnc_addSetting;
+[
+	QGVAR(requireCopilot),
+	"CHECKBOX",
+	[
+		"Require copilot",
+		"Determines if a crewed air vehicle requires a copilot to operate (gunner for attack helos)."
 	],
 	_category,
 	true,

@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=330;
+		nextID=350;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14154.231,45.328735,16246.412};
-		dir[]={0.44004843,-0.56411958,0.69867891};
-		up[]={0.30064186,0.82569087,0.47733948};
-		aside[]={0.84616864,1.8521678e-07,-0.53294396};
+		pos[]={14178.224,52.770752,16259.827};
+		dir[]={0.1429726,-0.70393413,0.69572669};
+		up[]={0.14169817,0.71026522,0.68952513};
+		aside[]={0.97953069,0,-0.20129465};
 	};
 };
 binarizationWanted=0;
@@ -43,13 +43,17 @@ addons[]=
 	"cba_main",
 	"A3_Structures_F_Ind_Shed",
 	"A3_Soft_F_MRAP_01",
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"A3_Air_F_Heli_Light_01",
+	"A3_Air_F_Beta_Heli_Attack_01",
+	"A3_Air_F_Heli_Heli_Transport_03",
+	"A3_Air_F_Beta_Heli_Transport_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=12;
+		items=15;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -131,6 +135,27 @@ class AddonsMetaData
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item12
+		{
+			className="A3_Air_F";
+			name="Arma 3 Alpha - Aircraft";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item13
+		{
+			className="A3_Air_F_Beta";
+			name="Arma 3 Beta - Aircraft";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item14
+		{
+			className="A3_Air_F_Heli";
+			name="Arma 3 Helicopters - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -383,7 +408,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=30;
+		items=35;
 		class Item0
 		{
 			dataType="Group";
@@ -396,7 +421,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14154.467,19.514931,16283.137};
+						position[]={14180.62,19.529871,16286.849};
 						angles[]={0,0.91450018,0};
 					};
 					side="West";
@@ -622,7 +647,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this, WEST] call uk1r_arsenal_fnc_add;";
+				init="[this, EAST] call uk1r_arsenal_fnc_add;";
 				name="uk1r_arsenal_blufor_2";
 				disableSimulation=1;
 			};
@@ -1378,6 +1403,91 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item30
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14169.58,21.03019,16296.193};
+				angles[]={0.041309625,0,0.0026520467};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=345;
+			type="B_Heli_Light_01_dynamicLoadout_F";
+			atlOffset=-1.5258789e-05;
+		};
+		class Item31
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14176.261,21.35038,16292.092};
+				angles[]={0.041309625,0,6.2778587};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=346;
+			type="B_Heli_Attack_01_dynamicLoadout_F";
+			atlOffset=-1.9073486e-05;
+		};
+		class Item32
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14185.286,22.915857,16282.595};
+				angles[]={0.012000273,0,6.2778587};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=347;
+			type="B_Heli_Transport_03_F";
+			atlOffset=-1.7166138e-05;
+		};
+		class Item33
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14197.299,21.673546,16276.645};
+				angles[]={0.010664274,0,6.2751846};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=348;
+			type="B_Heli_Transport_01_F";
+			atlOffset=4.196167e-05;
+		};
+		class Item34
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14207.066,21.390392,16269.967};
+				angles[]={0.014664836,0,6.2818484};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=349;
+			type="B_Heli_Light_01_F";
+			atlOffset=7.6293945e-06;
 		};
 	};
 };

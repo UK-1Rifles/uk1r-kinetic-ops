@@ -4,9 +4,9 @@ class DOUBLES(PREFIX,COMPONENT) {
     file = QUOTE(PREFIX\functions\COMPONENT);
     class getRole {};
     class init {};
+    class isQualifiedVehicle {};
+    class seatSwitchedManEH {};
     class setRole {};
-    class turretChangedEH {};
-    class vehicleChangedEH {};
     class weaponChangedEH {};
   };
 };
