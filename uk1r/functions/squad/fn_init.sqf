@@ -9,16 +9,6 @@ if (hasInterface) then {
     FUNC(weaponChangedEH)
   ] call cba_fnc_addPlayerEventHandler;
 
-  //[
-  //  "vehicle",
-  //  FUNC(vehicleChangedEH)
-  //] call cba_fnc_addPlayerEventHandler;
-
-  //[
-  //  "turret",
-  //  FUNC(turretChangedEH)
-  //] call cba_fnc_addPlayerEventHandler;
-
   player addEventHandler [
     "GetInMan",
     FUNC(isQualifiedVehicle)
@@ -28,6 +18,24 @@ if (hasInterface) then {
     "SeatSwitchedMan",
     FUNC(isQualifiedVehicle)
   ];
+
+  [
+    "Tank_F",
+    "Engine",
+    FUNC(engineOnEH)
+  ] call cba_fnc_addClassEventHandler;
+
+  [
+    "Wheeled_APC_F",
+    "Engine",
+    FUNC(engineOnEH)
+  ] call cba_fnc_addClassEventHandler;
+
+  [
+    "Air",
+    "Engine",
+    FUNC(engineOnEH)
+  ] call cba_fnc_addClassEventHandler;
 
 };
 
